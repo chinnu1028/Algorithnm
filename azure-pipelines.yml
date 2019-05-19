@@ -15,10 +15,7 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
-  - task: Maven@3
+      - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
       publishJUnitResults: true
@@ -29,3 +26,7 @@ steps:
       mavenAuthenticateFeed: false
       sonarQubeRunAnalysis: false
       findBugsRunAnalysis: true
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+
